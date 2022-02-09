@@ -1,11 +1,29 @@
-# test-task-skeleton
+# Test task skeleton
 **Repository for test task for Ruby Internship 2022**
 
 As participant you should fork this repository, add needed code in file `test_skeleton.rb` and create contribute request to main repository.
 
-Beforehand you should install Ruby 2.7 and gem Rspec (`gem install rspec`)
+***How to fork repository***
 
-Tests should be passed before creating contribute request. For running tests you should run `ruby test.rb` in directory of repository
+![how to fork](./images/1.png)
+
+Beforehand you should install Ruby 2.7 and gem Rspec (`gem install rspec`). Tests should be passed before creating contribute request. For running tests you should run `rspec` in directory of repository
+
+***If you will try run `rspec` after cloning repository to local directory you will get this***
+
+![failed run](./images/2.jpg)
+
+***Then you should add correct code here***
+
+![code](./images/3.png)
+
+***and after that number of failures should decrease, repeat this until you all tests will be passed***
+
+![success](./images/4.jpg)
+
+***After that you could create contribute pull request or just send link of repository***
+
+![contribute](./images/5.jpg)
 
 List of tasks to implement(All credits to https://codewars.com):
 * [Even or Odd](https://github.com/Murchibik/test-task-skeleton/blob/main/test_skeleton.rb#L12)
