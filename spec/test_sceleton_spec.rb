@@ -41,7 +41,8 @@ RSpec.describe TestSkeleton do
   describe '#my_languages' do
     context 'when hash with string keys is given' do
       it 'should return array of keys where value more than 60' do
-        expect(suite.my_languages('Hindi' => 65, 'Greek' => 70, 'German' => 20)).to eq(%w[Hindi Greek])
+        expect(suite.my_languages('Hindi' => 65, 'Greek' => 70, 'German' => 20)).to eq(%w[Greek Hindi])
+        expect(suite.my_languages('Japanese' => 68, 'Malasian' => 62, 'Chinese' => 61, 'Arabic' => 79)).to eq(%w[Arabic Japanese Malasian Chinese])
         expect(suite.my_languages({})).to eq([])
         expect(suite.my_languages('A' => 30, 'B' => 50, 'C' => 25)).to eq([])
       end
@@ -72,7 +73,7 @@ RSpec.describe TestSkeleton do
     context 'when string is given' do
       it 'should return middle character(s) of string' do
         expect(suite.middle_chars('A')).to eq('A')
-        expect(suite.middle_chars('Cherry')).to eq('r')
+        expect(suite.middle_chars('Cherry')).to eq('er')
         expect(suite.middle_chars('push')).to eq('us')
         expect(suite.middle_chars('Do Androids Dream of Electric Sheep?')).to eq(' o')
       end
